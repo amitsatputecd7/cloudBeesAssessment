@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Purchase Confirmation</title>
+</head>
+<body>
+    <h1>Purchase Confirmation</h1>
+
+    <p>Thank you for purchasing a train ticket!</p>
+
+    <p>
+        From: London<br>
+        To: France<br>
+        User: <span th:text="${user.fullName}"></span><br>
+        Email: <span th:text="${user.email}"></span><br>
+        Section: <span th:text="${section}"></span><br>
+        Seat: <span th:text="${seatNumber}"></span><br>
+        Price Paid: $20
+    </p>
+
+    <p>Your purchase details:</p>
+    <ul>
+        <li><strong>From:</strong> London</li>
+        <li><strong>To:</strong> France</li>
+        <li><strong>User:</strong> <span th:text="${user.fullName}"></span></li>
+        <li><strong>Email:</strong> <span th:text="${user.email}"></span></li>
+        <li><strong>Section:</strong> <span th:text="${section}"></span></li>
+        <li><strong>Seat:</strong> <span th:text="${seatNumber}"></span></li>
+        <li><strong>Price Paid:</strong> $20</li>
+    </ul>
+</body>
+</html>

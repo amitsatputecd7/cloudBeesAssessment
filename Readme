@@ -1,0 +1,17 @@
+
+Purchase Ticket:
+1.
+POST /api/train/purchase
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com"
+}
+2. View Receipt 
+GET /api/train/receipt?email=john.doe@example.com
+3.View Users by Section 
+GET /api/train/users?section=A
+4. Remove User from Train
+DELETE /api/train/remove?email=john.doe@example.com
+5. Modify User's Seat
+PUT /api/train/modify?email=m.scott@example.com&newSection=B
