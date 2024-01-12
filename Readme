@@ -5,13 +5,13 @@ POST /api/train/purchase
 {
   "firstName": "John",
   "lastName": "Doe",
-  "email": "john.doe@example.com"
+  "email": "michael.scott@example.com"
 }
-2. View Receipt 
-GET /api/train/receipt?email=john.doe@example.com
-3.View Users by Section 
-GET /api/train/users?section=A
-4. Remove User from Train
-DELETE /api/train/remove?email=john.doe@example.com
-5. Modify User's Seat
-PUT /api/train/modify?email=m.scott@example.com&newSection=B
+2. View receipt 
+get -  /api/train/receipt?email=michael.scott@example.com
+3.View Users by section 
+get -  /api/train/users?section=A
+4. Remove user from train
+delete -  /api/train/remove?email=jim.carrey@example.com
+5. Modify user's seat
+put - /api/train/modify?email=michael.scott@example.com&newSection=B
