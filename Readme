@@ -3,8 +3,8 @@ Purchase Ticket:
 1.
 POST /api/train/purchase
 {
-  "firstName": "John",
-  "lastName": "Doe",
+  "firstName": "michael",
+  "lastName": "scott",
   "email": "michael.scott@example.com"
 }
 2. View receipt 
